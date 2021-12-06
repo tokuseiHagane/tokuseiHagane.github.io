@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>Современные операционные системы</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="images/favicon/favicon.ico">
+</head>
+<body>
+    <nav>
+        <a class="icon" href="index.html"><img src="assets/icon.webp" alt="main"></a>
+        <div class="menu">
+            <ul class="nav-bar">
+                <li class="menu-link">
+                    <!-- ГЛАВНАЯ -->
+                    <a class="menu-point" href="index.html">Главная</a>
+                </li>
+                <li class="menu-link">
+                    <!-- WINDOWS -->
+                    <a class="menu-point" href="windows.html">Windows</a>
+                    <ul class = "sub-menu">
+                        <li>
+                            <a class="nav-point" href = "#main" >Windows</a>
+                        </li>
+                        <li class = "sub-menu-link">
+                            <a class="nav-point" href = "#W9X" >Семейство Windows 9x</a>
+                        </li>
+                        <li class = "sub-menu-link">
+                            <a class="nav-point" href = "#WNT" >Семейство Windows NT</a>
+                        </li>
+                        <li class = "sub-menu-link">
+                            <a class="nav-point" href = "#WP" >Семейство ОС Windows для смартфонов</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-link">
+                    <!-- BSD -->
+                    <a class="menu-point" href="bsd.html">BSD</a>
+                    <ul class = "sub-menu">
+                        <li>
+                            <a class="nav-point" href = "bsd.html#BSD" >Berkeley Software Distribution</a>
+                        </li>
+                        <li class = "sub-menu-link">
+                            <a class="nav-point" href = "bsd.html#FreeBSD" >FreeBSD</a>
+                        </li>
+                        <li class = "sub-menu-link">
+                            <a class="nav-point" href = "bsd.html#OpenBSD" >OpenBSD</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-link">
+                    <!-- LINUX -->
+                    <a class="menu-point" href="linux.html">GNU/Linux</a>
+                    <ul class = "sub-menu">
+                        <li>
+                            <a class="nav-point" href = "linux.html#main" >Linux</a>
+                        </li>
+                        <li class = "sub-menu-link">
+                            <a class="nav-point" href = "linux.html#history" >Ранняя история</a>
+                        </li>
+                        <li class = "sub-menu-link">
+                        <li class = "sub-menu-link">
+                            <a class="nav-point" href = "linux.html#realization" >Реализация</a>
+                        </li>    
+                            <a class="nav-point" href = "linux.html#interface" >Интерфейс пользователя</a>
+                        </li>
+                        <li class = "sub-menu-link">
+                            <a class="nav-point" href = "linux.html#model" >Модель</a>
+                        </li>
+                        <li class = "sub-menu-link">
+                            <a class="nav-point" href = "linux.html#prog" >Программирование в Linux</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-link">
+                    <!-- macOS -->
+                    <a class="menu-point" href="macos.html">macOS</a>
+                    <ul class = "sub-menu">
+                        <li>
+                            <a class="nav-point" href = "macos.html#main" >macOS</a>
+                        </li>
+                        <li class = "sub-menu-link">
+                            <a class="nav-point" href = "macos.html#about" >Описание</a>
+                        </li>
+                        <li class = "sub-menu-link">
+                            <a class="nav-point" href = "macos.html#software" >Программная совместимость</a>
+                        </li>
+                        <li class = "sub-menu-link">
+                            <a class="nav-point" href = "macos.html#hardware" >Аппаратная совместимость</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <button class="burger" id="burger" onclick="ToggleMenu()">
+            <div class="line"></div>
+        </button>
+        <div class="menu-burger">
+            <ul class="nav-burger" id="menu-burger" style="list-style-type: none;">
+                <li>
+                    <!-- ГЛАВНАЯ -->
+                    <a class="nav-bar-a" href="index.html">Главная</a>
+                </li>
+                <li>
+                    <!-- WINDOWS -->
+                    <a class="nav-bar-a" href="windows.html">Windows</a>
+                    <ul style="list-style-type: none;">
+                        <li>
+                            <a class="nav-bar-a" href = "#main" >Windows</a>
+                        </li>
+                        <li>
+                            <a class="nav-bar-a" href = "#W9X" >Семейство Windows 9x</a>
+                        </li>
+                        <li>
+                            <a class="nav-bar-a" href = "#WNT" >Семейство Windows NT</a>
+                        </li>
+                        <li>
+                            <a class="nav-bar-a" href = "#WP" >Семейство ОС Windows для смартфонов</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <!-- BSD -->
+                    <a class="nav-bar-a" href="bsd.html">BSD</a>
+                    <ul style="list-style-type: none;">
+                        <li>
+                            <a class="nav-bar-a" href = "bsd.html#BSD" >Berkeley Software Distribution</a>
+                        </li>
+                        <li>
+                            <a class="nav-bar-a" href = "bsd.html#FreeBSD" >FreeBSD</a>
+                        </li>
+                        <li>
+                            <a class="nav-bar-a" href = "bsd.html#OpenBSD" >OpenBSD</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <!-- LINUX -->
+                    <a class="nav-bar-a" href="linux.html">GNU/Linux</a>
+                    <ul style="list-style-type: none;">
+                        <li>
+                            <a class="nav-bar-a" href = "linux.html#main" >Linux</a>
+                        </li>
+                        <li>
+                            <a class="nav-bar-a" href = "linux.html#history" >Ранняя история</a>
+                        </li>
+                        <li>
+                            <a class="nav-bar-a" href = "linux.html#realization" >Реализация</a>
+                        </li>    
+                            <a class="nav-bar-a" href = "linux.html#interface" >Интерфейс пользователя</a>
+                        </li>
+                        <li>
+                            <a class="nav-bar-a" href = "linux.html#model" >Модель</a>
+                        </li>
+                        <li>
+                            <a class="nav-bar-a" href = "linux.html#prog" >Программирование в Linux</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <!-- macOS -->
+                    <a class="nav-bar-a" href="macos.html">macOS</a>
+                    <ul style="list-style-type: none;">
+                        <li>
+                            <a class="nav-bar-a" href = "macos.html#main" >macOS</a>
+                        </li>
+                        <li>
+                            <a class="nav-bar-a" href = "macos.html#about" >Описание</a>
+                        </li>
+                        <li>
+                            <a class="nav-bar-a" href = "macos.html#software" >Программная совместимость</a>
+                        </li>
+                        <li>
+                            <a class="nav-bar-a" href = "macos.html#hardware" >Аппаратная совместимость</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+            <!-- WINDOWS -->
+            <section class="win-section" id="main">
+                <img src="assets/winlogo.png">
+                <h1 id="main">WINDOWS</h1>
+                <div class="win-block">
+                    <article>
+                        <p>
+                            Windows (с англ. — «Окна») — группа семейств коммерческих операционных систем корпорации Microsoft, ориентированных на управление с помощью графического интерфейса. 
+                            MS-DOS — является прародителем Windows. Изначально, Windows был лишь графическим интерфейсом для MS-DOS. 
+                            Каждое семейство обслуживает определённый сектор компьютерной индустрии. 
+                            Активные семейства Microsoft Windows включают Windows NT и Windows IoT; они могут включать подсемейства (например, Windows Server или Windows Embedded Compact) (Windows CE). 
+                            Неактивные семейства Microsoft Windows включают Windows 9x, Windows Mobile и Windows Phone. 
+                            Изначально Windows была всего лишь графической программой-надстройкой для распространённой в 1980-х и 1990-х годах операционной системы MS-DOS. Согласно данным ресурса Net Applications, по состоянию на август 2014 года под управлением операционных систем семейства Windows работает около 88 % персональных компьютеров. Windows работает на платформах x86, x86-64 и ARM. 
+                            Существовали также версии для DEC Alpha, MIPS, IA-64, PowerPC и SPARC. 
+                            Последней на данный момент операционной системой Microsoft является Windows 11, представленная 24 июня 2021 года.
+                        </p>
+                    </article>
+                </div>
+                <div class="win-block">
+                    <h2 id="W9X">Семейство Windows 9x</h2>
+                    <article>
+                        <p>
+                            Первая система данного семейства — Windows 95 — была выпущена в 1995 году. 
+                            Её отличительными особенностями являлись новый пользовательский интерфейс, поддержка длинных имён файлов, автоматическое определение и конфигурация периферийных устройств Plug and Play (с англ. — «Подключи и играй»), способность исполнять 32-битные приложения и наличие поддержки TCP/IP прямо в системе. 
+                            Windows 95 использовала вытесняющую многозадачность и выполняла каждое 32-битное приложение в своём адресном пространстве. К данному семейству относятся также Windows 98 и Windows Me.
+                        </p>
+                        <div class="aside-img">
+                            <img src="assets/Win95logo.png">
+                        </div>
+                    </article>
+                    <article>
+                        <p>
+                            Операционные системы этого семейства не являлись такими безопасными многопользовательскими системами, как Windows NT, поскольку из соображений совместимости вся подсистема пользовательского интерфейса и графики оставалась 16-битной и мало отличалась от той, что была в Windows 3.x. 
+                            Так как этот код не был потокобезопасным, все вызовы в подсистему оборачивались в мьютекс по имени Win16Lock, который ещё и находился всегда в захваченном состоянии во время исполнения 16-битного приложения. 
+                            Таким образом, «зависание» 16-битного приложения немедленно блокировало всю ОС. Но уже в 1999 году вышло второе исправленное издание.
+                        </p>
+                        <div class="aside-img">
+                            <img src="assets/Win98logo.png">
+                        </div>
+                    </article>
+                    <article>
+                        <p>
+                            Программный интерфейс был подмножеством Win32 API, поддерживаемым Windows NT, но имел поддержку Юникода в очень ограниченном объёме. 
+                            Также в нём не было должного обеспечения безопасности (списков доступа к объектам и понятия «администратор»).
+                        </p>
+                    </article>
+                    <article>
+                        <p>
+                            В составе Windows 95 присутствовала MS-DOS 7.0, однако её роль сводилась к обеспечению загрузки и исполнения 16-битных DOS-приложений. 
+                            Исследователи заметили, что ядро Windows 95 — VMM — обращается к DOS под собой, но таких обращений довольно мало, главнейшая функция ядра DOS — файловая система FAT — не использовалась. 
+                            В целом же интерфейс между VMM и нижележащей DOS никогда не публиковался, и DOS была замечена Эндрю Шульманом (книга «Недокументированный Windows 95») в наличии недокументированных вызовов только для поддержки VMM.
+                        </p>
+                    </article>
+                </div>
+                <div class="win-block">
+                    <h2 id="WNT">Семейство Windows NT</h2>
+                    <article>
+                        <p>
+                            Операционные системы этого семейства в настоящее время работают на процессорах с архитектурами x86, x86-64, ARM2021. 
+                            Ранние версии (до 4.0 включительно) также поддерживали некоторые RISC-процессоры: Alpha, MIPS и PowerPC. 
+                            Все операционные системы этого семейства являются полностью 32- или 64-битными и не нуждаются в MS-DOS даже для загрузки.
+                        </p>
+                        <div class="aside-img">
+                            <img src="assets/Win8logo.svg">
+                        </div>
+                    </article>
+                    <article>
+                        <p>
+                            Только в этом семействе представлены операционные системы для серверов. 
+                            До версии Windows 2000 включительно они выпускались под тем же названием, что и аналогичная версия для рабочих станций, но с добавлением суффикса, например «Windows NT 4.0 Server» и «Windows 2000 Datacenter Server». 
+                            Начиная с Windows Server 2003 серверные операционные системы называются добавлением суффикса «Server» и года выпуска.
+                        </p>
+                        <div class="aside-img">
+                            <img src="assets/Win10logo.svg">
+                        </div>
+                    </article>
+                    <article>
+                        <ul>
+                            <li>Windows NT 3.1 (1993)</li>
+                            <li>Windows NT 3.5 (1994)</li>
+                            <li>Windows NT 3.51 (1995)</li>
+                            <li>Windows NT 4.0 (1996)</li>
+                            <li>Windows 2000 — Windows NT 5.0 (2000)</li>
+                            <li>Windows XP22232425 — Windows NT 5.1 (2001)</li>
+                            <li>Windows XP 64-bit Edition — Windows NT 5.2 (2003)</li>
+                            <li>Windows Server 2003 — Windows NT 5.2 (2003)</li>
+                            <li>Windows XP Professional x64 Edition — Windows NT 5.2 (2005)</li>
+                            <li>Windows Vista — Windows NT 6.0 (2006)</li>
+                            <li>Windows Home Server — Windows NT 5.2 (2007)</li>
+                            <li>Windows Server 2008 — Windows NT 6.0 (2008)</li>
+                            <li>Windows Small Business Server — Windows NT 6.0 (2008)</li>
+                            <li>Windows 72627 — Windows NT 6.1 (2009)</li>
+                            <li>Windows Server 2008 R2 — Windows NT 6.1 (2009)</li>
+                            <li>Windows Home Server 2011 — Windows NT 6.1 (2011)</li>
+                            <li>Windows 8 — Windows NT 6.2 (2012)</li>
+                            <li>Windows Server 2012 — Windows NT 6.2 (2012)</li>
+                            <li>Windows 8.134 — Windows NT 6.3 (2013)</li>
+                            <li>Windows Server 2012 R2 — Windows NT 6.3 (2013)</li>
+                            <li>Windows 10 — Windows NT 10.0 (2015)394041</li>
+                            <li>Windows Server 2016 — Windows NT 10.0 (2016)</li>
+                            <li>Windows Server 2019 — Windows NT 10.0 (2019)</li>
+                            <li>Windows 11 — Windows 10.0/11.0 (2021)</li>
+                        </ul>
+                        <img src="assets/winNTlogo.svg" class="logo-section">
+                    </article>
+                    <article>
+                        <p>
+                            В основу семейства Windows NT положено разделение адресных пространств между процессами. 
+                            Каждый процесс имеет возможность работать с выделенной ему памятью. 
+                            Однако он не имеет прав для записи в память других процессов, драйверов и системного кода.
+                        </p>
+                    </article>
+                    <article>
+                        <p>
+                            Семейство Windows NT относится к операционным системам с вытесняющей многозадачностью. 
+                            Разделение процессорного времени между потоками происходит по принципу «карусели». 
+                            Ядро операционной системы выделяет квант времени (в Windows 2000 квант равен примерно 20 мс) каждому из потоков по очереди при условии, что все потоки имеют одинаковый приоритет. 
+                            Поток может отказаться от выделенного ему кванта времени. В этом случае система перехватывает у него управление (даже если выделенный квант времени не закончен) и передаёт управление другому потоку. При передаче управления другому потоку система сохраняет состояние всех регистров процессора в особой структуре в оперативной памяти. 
+                            Эта структура называется контекстом потока. Сохранения контекста потока достаточно для последующего возобновления его работы.
+                        </p>
+                        <div class="aside-img">
+                            <img src="assets/Win11logo.svg">
+                        </div>
+                    </article>
+                </div>
+                <div class="win-block">
+                    <h2 id="WP">Семейство ОС Windows для смартфонов</h2>
+                    <article>
+                        <p>
+                            Это семейство операционных систем реального времени было специально разработано для мобильных устройств. 
+                            Поддерживаются процессоры ARM, MIPS, SuperH и x86. 
+                            В отличие от остальных операционных систем Windows, операционные системы этого семейства продаются только в составе готовых устройств, таких как смартфоны, карманные компьютеры, GPS-навигаторы, MP3-проигрыватели и другие. 
+                            В настоящее время под термином «Windows CE» понимают только ядро операционной системы. 
+                            Например, Windows Mobile 5.0 включает в себя ядро Windows CE 5.0.
+                        </p>
+                        <div class="aside-img">
+                            <img src="assets/WPlogo.svg">
+                        </div>
+                    </article>
+                    <article>
+                        <p>
+                            В настоящее время Windows Phone и Windows 10 Mobile неактуальны в связи с тем, что Windows Phone и Windows 10 Mobile уступили популярность Android и iOS.
+                        </p>
+                    </article>
+                </div>
+            </section>
+    </main>
+    <script src="script.js">
+        
+    </script>
+    <footer>
+        <div class="copyright">
+            <img src="assets/icon.webp">
+            <h2>© Solomatin Konstantin IKBO-13-20. All rights reserved</h2>
+        </div>
+    </footer>
+</body>

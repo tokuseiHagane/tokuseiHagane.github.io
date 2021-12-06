@@ -1,0 +1,620 @@
+* {
+    scroll-behavior: smooth;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+}
+
+a:any-link {
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+}
+
+/* ##### NAV ##### */
+.icon {
+    height: 70px;
+    width: 70px;
+    display: flex;
+}
+
+nav {
+    background-color: #3E2D84;
+    top: 0;
+    position: fixed;
+    display: flex;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu {
+    transition: 2s;
+    padding: 0;
+    padding-bottom: 28px;
+    margin: 0;
+    display: flex;
+    width: 38%;
+}
+.nav-bar {
+    font-weight: bold;
+    transition: 2s;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    display: inline-flex;
+    list-style-type: none;
+}
+.menu-link > li {
+    font-weight: bold;
+    transition: 2s;
+    position: inherit;
+}
+.menu-link .menu-point{
+    transition: 2s;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 4px;
+    font-size: 20px;
+    border: 1px solid #62247F;
+    background-color: #62247F;
+    color: white;
+    border-radius: 5px;
+}
+
+.nav-bar > li:hover .sub-menu {
+    font-weight: bold;
+    margin-top: 5px; 
+    margin-left: 10px;
+    padding: 2px;
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    border: 1px solid #62247F;
+    background-color: #62247F;
+    border-radius: 2px;
+    color: white;
+    transition: 2s;
+}
+
+.nav-point {
+    padding: 2px;
+    color: white;
+}
+
+.sub-menu {
+    transition: 2s;
+    list-style-type: none;
+    display: none;
+}
+
+/* ##### КОНТЕНТ ##### */
+
+main {
+    background: #4282D3;
+    height: 100%;
+    margin-left: 0;
+    margin-top: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.OS {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+}
+.OS > img {
+    padding: 2%;
+    width: 14%;
+}
+
+.site-main-section {
+    height: 100%;
+    width: 100%;
+    margin-left: 0;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: justify;
+}
+
+.site-main-section > h1 {
+    margin: 3%;
+    color: rgb(255, 255, 255);
+    font-size: 62px;
+}
+
+.site-main-block {
+    margin: 1%;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding: 2%;
+    background: #0e50a7dc;
+    border: 1px #0e50a7dc;
+    border-radius: 2%;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    font-size: x-large;
+}
+
+.aside-img {
+    margin: 5%;
+    padding: 1%;
+    background: cornsilk;
+    color: black;
+    box-shadow:  10px 5px 5px rgb(24, 24, 24);
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: fit-content;
+}
+
+.aside-img > img {
+    display: flex;
+    width: 200px;
+    padding: 2px;
+    height: fit-content;
+}
+
+.aside-img > span {
+    display: flex;
+    font-size: smaller;
+}
+
+.logo-section {
+    width: 40%;
+    height: fit-content;
+    margin-left: 5%;
+    background: white;
+    box-shadow:  10px 5px 5px rgb(24, 24, 24);
+    padding: 1%;
+}
+/* ##### WINDOWS ##### */
+
+.win-section {
+    margin-left: 0;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-items: space-around;
+    justify-content: space-around;
+    text-align: justify;
+}
+.win-section > img {
+    padding: 2%;
+    width: 25%;
+}
+.win-section > h1 {
+    margin: 3%;
+    color: rgb(255, 255, 255);
+    font-size: 62px;
+}
+
+.win-block {
+    align-self: center;
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.win-block > h2 {
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    padding-left: 5%
+}
+.win-block > article {
+    margin: 1%;
+    padding: 2%;
+    background: #0e50a7dc;
+    border: 1px #0e50a7dc;
+    border-radius: 2%;
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+/* ##### BSD  ##### */
+.bsd-section {
+    margin-left: 0;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-items: space-around;
+    justify-content: space-around;
+    text-align: justify;
+}
+.bsd-section > img {
+    padding: 2%;
+    width: 25%;
+}
+.bsd-section > h1 {
+    margin: 3%;
+    color: rgb(255, 255, 255);
+    font-size: 62px;
+}
+
+.bsd-block {
+    align-self: center;
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.bsd-block > h2 {
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    padding-left: 5%
+}
+.bsd-block > article {
+    margin: 1%;
+    padding: 2%;
+    background: #006F48dc;
+    border: 1px #006F48dc;
+    border-radius: 2%;
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+/* ##### LINUX ##### */
+
+.linux-section {
+    margin-left: 0;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-items: space-around;
+    justify-content: space-around;
+    text-align: justify;
+}
+.linux-section > img {
+    padding: 2%;
+    width: 25%;
+}
+.linux-section > h1 {
+    margin: 3%;
+    color: rgb(255, 255, 255);
+    font-size: 62px;
+}
+
+.linux-block {
+    align-self: center;
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.linux-block > h2 {
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    padding-left: 5%
+}
+.linux-block > article {
+    margin: 1%;
+    padding: 2%;
+    background: #BF5730dc;
+    border: 1px #BF5730dc;
+    border-radius: 2%;
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+/* ##### macOS ##### */
+
+.macOS-section {
+    margin-left: 0;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-items: space-around;
+    justify-content: space-around;
+    text-align: justify;
+}
+.macOS-section > img {
+    padding: 2%;
+    width: 25%;
+}
+.macOS-section > h1 {
+    margin: 3%;
+    color: rgb(255, 255, 255);
+    font-size: 62px;
+}
+
+.macOS-block {
+    align-self: center;
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+.macOS-block > h2 {
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    padding-left: 5%
+}
+.macOS-block > article {
+    margin: 1%;
+    padding: 2%;
+    background: #015367dc;
+    border: 1px #015367dc;
+    border-radius: 2%;
+    color: white;
+    display: flex;
+    flex-direction: row;
+}
+
+/* ##### ПОДВАЛ ##### */
+footer {
+    background-color: #05326D;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    flex-basis: auto;
+}
+
+.copyright {
+    margin-left: 45%;
+    margin-right: 1%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+}
+
+.copyright > img {
+    height: 45px;
+    width: 45px;
+    display: flex;
+}
+.copyright > h2 {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    color: rgb(255, 255, 255);
+    font-size: small;
+}
+
+.burger {
+    position: absolute;
+    opacity: 0;
+}
+.menu-burger {
+    display: none;
+}
+.nav-bar-a {
+    pointer-events: none;
+    cursor: default;
+}
+@media screen and (max-width: 1100px) {
+    .menu {
+        width: 70%
+    }
+    .site-main-block {
+        font-size: 50px;
+    }
+    .win-block > article {
+        flex-direction: column;
+    }
+    .bsd-block > article {
+        flex-direction: column;
+    }
+    .linux-block > article {
+        flex-direction: column;
+    }
+    .macOS-block > article {
+        flex-direction: column;
+    } 
+    .menu-burger {
+        display: flex;
+        width: 100%;
+        color: white;
+        align-items: center;
+        font-weight: bold;
+        background: #3E2D84;
+    }
+    .nav-burger {
+        flex-direction: column;
+        position: absolute;
+        background: #3E2D84;
+        color: white;
+        top: 40px;
+        width: 100%;
+        opacity: 0;
+    }
+    .nav-bar-a {
+        font-size: x-large;
+        pointer-events:none;
+    }
+    .nav-burger.active{
+        opacity: 1;
+    }
+    .nav-bar-a.active{
+        pointer-events:visible;
+        cursor: pointer;
+    }
+    .burger {
+        opacity: 1;
+        margin: 0;
+        padding: 0;
+        background: #3E2D84;
+        position: absolute;
+        top: 20%;
+        right: 5%;
+        border: none;
+        width: 2rem;
+        height: 2rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .burger .line, .burger .line::after, .burger .line::before {
+        display: inline-block;
+        background-color: rgb(0, 0, 0);
+        height: 4px;
+        border-radius: 10px;
+    }
+    .burger .line::after, .burger .line::before {
+        content: '';
+        width: 100%;
+        position: absolute;
+        left: 0;
+    }
+    .burger .line::before {
+        top: .5rem;
+    }
+    .burger .line::after {
+        top: -.5rem;
+    }
+    .burger .line {
+        width: 70%;
+        position: relative;
+    }
+    .burger.active .line{
+        background-color: transparent;
+    }
+    .burger.active .line::before {
+        top: 0;
+        background-color: red;
+        transform: rotate(135deg);
+    }
+    .burger.active .line::after {
+        top: 0;
+        background-color: red;
+        transform: rotate(-135deg);
+    }
+    .menu {
+        display: none;
+    }
+}
+@media screen and (max-width: 800px) {
+    .nav-bar-a {
+        font-size: small;
+        pointer-events:none;
+        cursor: default;
+    }
+    .site-main-block {
+        font-size: x-large;
+    }
+}
+@media screen and (max-width: 600px) {
+    .win-section > h1 {
+        font-size: 50px;
+    }
+    .win-block > article {
+        font-size: medium;
+        flex-direction: column;
+    }
+    .win-block > h2 {
+        font-size: 25px;
+    }
+
+    .bsd-section > h1 {
+        font-size: 50px;
+    }
+    .bsd-block > article {
+        font-size: medium;
+        flex-direction: column;
+    }
+    .bsd-block > h2 {
+        font-size: 25px;
+    }
+
+    .linux-section > h1 {
+        font-size: 40px;
+    }
+    .linux-block > article {
+        font-size: medium;
+        flex-direction: column;
+    }
+    .linux-block > h2 {
+        font-size: 25px;
+    }
+
+    .macOS-section > h1 {
+        font-size: 40px;
+    }
+    .macOS-block > article {
+        font-size: medium;
+        flex-direction: column;
+    }
+    .macOS-block > h2 {
+        font-size: 25px;
+    }
+    .nav-bar-a {
+        font-size: small;
+    }
+    
+}
+@media only screen and (max-width: 480px) {
+    .menu {
+        display: none;
+    }
+    .win-section > h1 {
+        font-size: 40px;
+    }
+    .win-block > article {
+        font-size: small;
+        flex-direction: column;
+    }
+    .win-block > h2 {
+        font-size: 20px;
+    }
+
+    .bsd-section > h1 {
+        font-size: 23px;
+    }
+    .bsd-block > article {
+        font-size: small;
+        flex-direction: column;
+    }
+    .bsd-block > h2 {
+        font-size: 20px;
+    }
+
+    .linux-section > h1 {
+        font-size: 40px;
+    }
+    .linux-block > article {
+        font-size: small;
+        flex-direction: column;
+    }
+    .linux-block > h2 {
+        font-size: 20px;
+    }
+
+    .macOS-section > h1 {
+        font-size: 40px;
+    }
+    .macOS-block > article {
+        font-size: small;
+        flex-direction: column;
+    }
+    .macOS-block > h2 {
+        font-size: 20px;
+    }
+    .nav-bar-a {
+        font-size: x-small;
+        pointer-events:none;
+        cursor: default;
+    }
+}

@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>Современные операционные системы</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="images/favicon/favicon.ico">
+</head>
+<body>
+    <nav>
+        <a class="icon" href="index.html"><img src="assets/icon.webp" alt="main"></a>
+        <div class="menu">
+            <ul class="nav-bar">
+                <li class="menu-link">
+                    <!-- ГЛАВНАЯ -->
+                    <a class="menu-point" href="index.html">Главная</a>
+                </li>
+                <li class="menu-link">
+                    <!-- WINDOWS -->
+                    <a class="menu-point" href="windows.html">Windows</a>
+                    <ul class = "sub-menu">
+                        <li>
+                            <a class="nav-point" href = "windows.html#main" >Windows</a>
+                        </li>
+                        <li class = "sub-menu-link">
+                            <a class="nav-point" href = "windows.html#W9X" >Семейство Windows 9x</a>
+                        </li>
+                        <li class = "sub-menu-link">
+                            <a class="nav-point" href = "windows.html#WNT" >Семейство Windows NT</a>
+                        </li>
+                        <li class = "sub-menu-link">
+                            <a class="nav-point" href = "windows.html#WP" >Семейство ОС Windows для смартфонов</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-link">
+                    <!-- BSD -->
+                    <a class="menu-point" href="bsd.html">BSD</a>
+                    <ul class = "sub-menu">
+                        <li>
+                            <a class="nav-point" href = "bsd.html#BSD" >Berkeley Software Distribution</a>
+                        </li>
+                        <li class = "sub-menu-link">
+                            <a class="nav-point" href = "bsd.html#FreeBSD" >FreeBSD</a>
+                        </li>
+                        <li class = "sub-menu-link">
+                            <a class="nav-point" href = "bsd.html#OpenBSD" >OpenBSD</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-link">
+                    <!-- LINUX -->
+                    <a class="menu-point" href="linux.html">GNU/Linux</a>
+                    <ul class = "sub-menu">
+                        <li>
+                            <a class="nav-point" href = "linux.html#main" >Linux</a>
+                        </li>
+                        <li class = "sub-menu-link">
+                            <a class="nav-point" href = "linux.html#history" >Ранняя история</a>
+                        </li>
+                        <li class = "sub-menu-link">
+                        <li class = "sub-menu-link">
+                            <a class="nav-point" href = "linux.html#realization" >Реализация</a>
+                        </li>    
+                            <a class="nav-point" href = "linux.html#interface" >Интерфейс пользователя</a>
+                        </li>
+                        <li class = "sub-menu-link">
+                            <a class="nav-point" href = "linux.html#model" >Модель</a>
+                        </li>
+                        <li class = "sub-menu-link">
+                            <a class="nav-point" href = "linux.html#prog" >Программирование в Linux</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-link">
+                    <!-- macOS -->
+                    <a class="menu-point" href="macos.html">macOS</a>
+                    <ul class = "sub-menu">
+                        <li>
+                            <a class="nav-point" href = "#main" >macOS</a>
+                        </li>
+                        <li class = "sub-menu-link">
+                            <a class="nav-point" href = "#about" >Описание</a>
+                        </li>
+                        <li class = "sub-menu-link">
+                            <a class="nav-point" href = "#software" >Программная совместимость</a>
+                        </li>
+                        <li class = "sub-menu-link">
+                            <a class="nav-point" href = "#hardware" >Аппаратная совместимость</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <button class="burger" id="burger" onclick="ToggleMenu()">
+            <div class="line"></div>
+        </button>
+        <div class="menu-burger">
+            <ul class="nav-burger" id="menu-burger" style="list-style-type: none;">
+                <li>
+                    <!-- ГЛАВНАЯ -->
+                    <a class="nav-bar-a" href="index.html">Главная</a>
+                </li>
+                <li>
+                    <!-- WINDOWS -->
+                    <a class="nav-bar-a" href="windows.html">Windows</a>
+                    <ul style="list-style-type: none;">
+                        <li>
+                            <a class="nav-bar-a" href = "windows.html#main" >Windows</a>
+                        </li>
+                        <li>
+                            <a class="nav-bar-a" href = "windows.html#W9X" >Семейство Windows 9x</a>
+                        </li>
+                        <li>
+                            <a class="nav-bar-a" href = "windows.html#WNT" >Семейство Windows NT</a>
+                        </li>
+                        <li>
+                            <a class="nav-bar-a" href = "windows.html#WP" >Семейство ОС Windows для смартфонов</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <!-- BSD -->
+                    <a class="nav-bar-a" href="bsd.html">BSD</a>
+                    <ul style="list-style-type: none;">
+                        <li>
+                            <a class="nav-bar-a" href = "bsd.html#BSD" >Berkeley Software Distribution</a>
+                        </li>
+                        <li>
+                            <a class="nav-bar-a" href = "bsd.html#FreeBSD" >FreeBSD</a>
+                        </li>
+                        <li>
+                            <a class="nav-bar-a" href = "bsd.html#OpenBSD" >OpenBSD</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <!-- LINUX -->
+                    <a class="nav-bar-a" href="linux.html">GNU/Linux</a>
+                    <ul style="list-style-type: none;">
+                        <li>
+                            <a class="nav-bar-a" href = "linux.html#main" >Linux</a>
+                        </li>
+                        <li>
+                            <a class="nav-bar-a" href = "linux.html#history" >Ранняя история</a>
+                        </li>
+                        <li>
+                            <a class="nav-bar-a" href = "linux.html#realization" >Реализация</a>
+                        </li>    
+                            <a class="nav-bar-a" href = "linux.html#interface" >Интерфейс пользователя</a>
+                        </li>
+                        <li>
+                            <a class="nav-bar-a" href = "linux.html#model" >Модель</a>
+                        </li>
+                        <li>
+                            <a class="nav-bar-a" href = "linux.html#prog" >Программирование в Linux</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <!-- macOS -->
+                    <a class="nav-bar-a" href="macos.html">macOS</a>
+                    <ul style="list-style-type: none;">
+                        <li>
+                            <a class="nav-bar-a" href = "#main" >macOS</a>
+                        </li>
+                        <li>
+                            <a class="nav-bar-a" href = "#about" >Описание</a>
+                        </li>
+                        <li>
+                            <a class="nav-bar-a" href = "#software" >Программная совместимость</a>
+                        </li>
+                        <li>
+                            <a class="nav-bar-a" href = "#hardware" >Аппаратная совместимость</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+            <!-- macOS -->
+            <section class="macOS-section" id="main">
+                <img src="assets/macOSlogo.png">
+                <h1>macOS</h1>
+                <div class="macOS-block">
+                    <article>
+                        <p>
+                            <b>macOS</b> (изначально была представлена как Mac OS X, в 2012 переименована в OS X, в 2016 переименована в macOS) — проприетарная операционная система от компании Apple. 
+                            Является преемницей Mac OS 9.
+                        </p>
+                    </article>
+                    <article>
+                        <p>
+                            Семейство операционных систем macOS является вторым по распространённости для десктопа (после Windows). 
+                            Рыночная доля macOS (учитываются все версии) по состоянию на январь 2021 составляет около ▼16,96 % по оценкам StatCounter. 
+                            Самой популярной версией macOS является Catalina (69,56 % среди всех версий macOS), следом идут Mojave (11,18 %), High Sierra (9,11 %), Sierra (3,6 %), El Capitan (3 %), Yosemite (2,34 %).
+                        </p>
+                    </article>
+                    <article>
+                        <p>
+                            В macOS используется ядро XNU, основанное на микроядре Mach и содержащее программный код, разработанный компанией Apple, а также код из ОС NeXTSTEP и FreeBSD. 
+                            До версии 10.3 ОС работала только на компьютерах с процессорами PowerPC. Выпуски 10.4 и 10.5 поддерживали как PowerPC-, так и Intel-процессоры. Начиная с 10.6, macOS работает только с процессорами Intel и Apple Silicon.
+                        </p>
+                    </article>
+                    <article>
+                        <p>
+                            В последние годы отмечается взаимная интеграция macOS и iOS — операционной системы для мобильных устройств Apple (iPhone, iPad и iPod touch). 
+                            Сама компания рассматривает две ОС как единую платформу. На презентации Back to the Mac в 2010 году Стив Джобс, анонсируя OS X Lion, упомянул о важности обмена наработками между Mac OS X и iOS: так, в Lion появилась поддержка мультитач-жестов на трекпаде (аналогичных жестам на iPad). 
+                            В последующих выпусках macOS также наблюдалась тенденция к заимствованию функций из iOS (и наоборот). 
+                            Например, в OS X Yosemite и iOS 8 была добавлена технология Handoff, позволяющая «перехватывать» с одного устройства приложения, запущенные на другом: начать набирать письмо на Mac, а закончить на iPad; открыть веб-страницу на iPhone и продолжить чтение на Mac и т. д.
+                        </p>
+                    </article>
+                    <article>
+                        <p>
+                            На WWDC 2016 было объявлено, что OS X будет переименована в macOS, чтобы соответствовать общей стилистике именования других платформ Apple: tvOS, watchOS и iOS; macOS Sierra стала первой версией, использующей новое название.
+                        </p>
+                    </article>
+                </div>
+                <div class="macOS-block">
+                    <h2 id="about">Описание</h2>
+                    <article>
+                        <p>
+                            macOS значительно отличается от предыдущих, «классических версий» Mac OS. 
+                            Основа системы — POSIX-совместимая операционная система Darwin, являющаяся свободным программным обеспечением. 
+                            Её ядром является XNU, в котором используется микроядро Mach и стандартные службы BSD. 
+                            Все возможности Unix в macOS доступны через консоль.
+                        </p>
+                        <div class="aside-img">
+                            <img src="assets/MacOSX.jpg">
+                        </div>
+                    </article>
+                    <article>
+                        <p>
+                            Поверх этой основы в Apple разработано много проприетарных компонентов, таких как Cocoa и Carbon, Quartz.
+                            <br>
+                            macOS отличается высокой устойчивостью, что делает её непохожей на предшественницу, Mac OS 9.
+                        </p>
+                    </article>
+                    <article>
+                        <p>
+                            В macOS (как и в любой UNIX-системе) используется вытесняющая многозадачность и защита памяти, позволяющие запускать несколько изолированных друг от друга процессов, каждый из которых не может прервать или модифицировать все остальные. 
+                            На архитектуру macOS повлияла OpenStep, которая была задумана как переносимая операционная система (например, NeXTSTEP была перенесена с оригинальной платформы 68k компьютера NeXT до приобретения NeXTSTEP компанией Apple). 
+                            Аналогичным образом OpenStep была перенесена на PowerPC в рамках проекта Rhapsody.
+                        </p>
+                    </article>
+                    <article>
+                        <p>
+                            Наиболее заметно изменился графический интерфейс, который в macOS получил название Aqua. 
+                            Использование закруглённых углов, полупрозрачных элементов и светлых полосок также повлияло на внешний вид первых моделей iMac. 
+                            После выхода первой версии Mac OS X другие разработчики тоже стали использовать интерфейс Aqua. 
+                            Для предотвращения использования своего дизайна на других платформах Apple воспользовалась услугами юристов.
+                        </p>
+                    </article>
+                    <article>
+                        <p>
+                            Основами macOS являются:
+                        </p>
+                        <ul>
+                            <li>Подсистема с открытым кодом — Darwin (ядро Mach и набор утилит BSD).</li>
+                            <li>Среда программирования Core Foundation (Carbon API, Cocoa API и Java API).</li>
+                            <li>Графическая среда Aqua (QuickTime, Quartz Extreme и OpenGL).</li>
+                            <li>Технологии Core Image, Core Animation, CoreAudio и CoreData.</li>
+                        </ul>
+                    </article>
+                </div>
+                <div class="macOS-block">
+                    <h2 id="software">Программная совместимость</h2>
+                    <article>
+                        <p>
+                            Для обеспечения гладкого перехода с Mac OS 9 на Mac OS X был создан Carbon. 
+                            Приложение, написанное с помощью Carbon, может запускаться на обеих ОС. 
+                            С другой стороны, macOS наследует многое от OpenStep, которая не является обратно-совместимой с прежними версиями Mac OS. 
+                            На данный момент Apple рекомендует API Cocoa, в котором весьма заметно наследие OpenStep: имена многих классов начинаются с «NS» (NSObject, NSArray), что является аббревиатурой от NeXTSTEP.
+                        </p>
+                    </article>
+                    <article>
+                        <p>
+                            Также macOS поддерживает Java. Это означает, что Java-приложения, использующие Swing, выглядят так же, как и приложения на Cocoa. 
+                            Традиционно Cocoa-приложения разрабатываются на Objective-C — де-факто компилируемой альтернативе Java. 
+                            Однако 25 июля 2007 года Apple заявила, что дальнейшие расширения в Cocoa не будут портированы на Java. 
+                            В составе macOS, начиная с версии 10.5 Leopard, поставляется интерпретатор Ruby с поддержкой Cocoa.
+                        </p>
+                    </article>
+                    <article>
+                        <p>
+                            В отличие от предшественниц, macOS является полноценной сертифицированной операционной системой UNIX. 
+                            Это означает, что большинство программ, написанных для BSD, Linux и других UNIX-подобных систем, скомпилируется и будет работать на macOS без (или почти без) изменений в коде. 
+                            Для удобной установки таких программ разработаны менеджеры пакетов, такие как Homebrew, Fink или MacPorts (ранее — DarwinPorts). 
+                            Они подобны APT в Debian, RPM в Red Hat и родственным ему Linux-дистрибутивам или портам.
+                        </p>
+                    </article>
+                    <article>
+                        <p>
+                            Начиная с версии 10.3 Panther, macOS по умолчанию также включает в себя X11.app — адаптированную версию X-сервера. 
+                            Это позволяет запускать приложения, разработанные для X11, с использованием GTK+, Qt для X11 (Qt4 поддерживает macOS как в режиме X11, так и в обычном режиме Aqua) и прочих. 
+                            Для вывода на экран X11.app использует Quartz. 
+                            Однако X11.app имеет ряд недостатков, таких как отсутствие Aqua-стиля и неполную поддержку Unicode.
+                            <br>
+                            Более ранние версии ОС могут запускать X-сервер через XDarwin.
+                        </p>
+                    </article>
+                </div>
+                <div class="macOS-block">
+                    <h2 id="hardware">Аппаратная совместимость</h2>
+                    <article>
+                        <p>
+                            Ранние версии Mac OS X поддерживали все компьютеры Macintosh (десктопы, ноутбуки или серверы) на процессорах PowerPC G3, G4 и G5. 
+                            Более поздние версии перестают поддерживать старое оборудование: например, версия 10.3 Panther не поддерживает самые старые из G3, 10.4 Tiger не поддерживает системы без FireWire, бета-версия 10.5 Leopard, представленная на WWDC, не поддерживала G3 вовсе. Однако существуют утилиты, такие как XPostFacto, и патчи к установочному диску, сделанные сторонними разработчиками, позволяющие установить новые версии OS X на официально не поддерживаемом оборудовании, включая некоторые предшествующие G3 системы. Исключая некоторые возможности, требуемые оборудованием (такие, как графическое ускорение, запись DVD), операционная система предлагает одинаковую функциональность на всём поддерживаемом оборудовании.
+                        </p>
+                    </article>
+                    <article>
+                        <p>
+                            Версия Mac OS X для PowerPC остаётся совместимой со старыми Mac OS приложениями через эмуляцию так называемой Classic, которая позволяет пользователям запускать Mac OS 9 как процесс в Mac OS X, поэтому многие старые приложения работают так, будто они запускаются на старой операционной системе. 
+                            Classic не работает на компьютерах с процессорами Intel.
+                        </p>
+                        <div class="aside-img">
+                            <img src="assets/Macg4.jpg">
+                        </div>
+                    </article>
+                    <article>
+                        <p>
+                            В апреле 2002 года eWeek сообщил, что, по слухам, у Apple есть версия Mac OS X с кодовым названием Marklar, которая запускается на процессорах Intel x86. Идея Marklar была в переходе OS X на альтернативную платформу, которая позволит Apple преодолеть проблемы развития платформы PowerPC. Слухи оставались неподтверждёнными до мая 2005 года, когда в файлообменных сетях появилась бета-версия OS X для процессоров Intel.
+                        </p>
+                    </article>
+                    <article>
+                        <p>
+                            6 июня 2005 года Стив Джобс на WWDC подтвердил слухи о том, что в течение двух лет Apple перейдёт с PowerPC на Intel. До этого Apple сменила платформу с Motorola 68k на PowerPC — тогда в новую ОС был включён эмулятор m68k, который позволял запускать большинство 68k-приложений. Apple поддерживала эмулятор в течение 11 лет. При переходе на Intel он был удалён из системы. В новую ОС был включён эмулятор PowerPC Rosetta. Также новая версия Xcode и соответствующие консольные утилиты позволяют разрабатывать Universal Binaries — исполняемые файлы, которые могут запускаться как на PowerPC, так и на Intel.
+                        </p>
+                        <div class="aside-img">
+                            <img src="assets/SteveJobs.jpg">
+                        </div>
+                    </article>
+                    <article>
+                        <p>
+                            Большинство программ, доступных только для PowerPC, поддерживалось при помощи Rosetta. 
+                            Скорость работы PowerPC-приложений на компьютерах с Intel заметно ниже. Кроме того, некоторое ПО (например, расширения ядра и плагины системных настроек) не работает с использованием эмулятора. 
+                            По этим причинам Apple рекомендовала разработчикам создавать универсальные программы для обеих платформ. 
+                            В OS X Lion и более поздних версиях поддержка Rosetta отсутствует.
+                        </p>
+                    </article>
+                    <article>
+                        <p>
+                            Обратная совместимость x86-приложений отсутствует. Последней версией Mac OS X, поддерживающей PowerPC, является 10.5 Leopard.
+                        </p>
+                    </article>
+                    <article>
+                        <p>
+                            macOS была портирована на iPhone и iPod touch. 
+                            Несмотря на серьёзные изменения — например, закрытость платформы и отсутствие рабочего стола (его заменяет SpringBoard) — в порте сохранились такие особенности, как Darwin и ядро XNU. 
+                            В некоторых сторонних программах сохранились эффекты из настольной версии — например, в программе Converter.
+                        </p>
+                    </article>
+                </div>
+            </section>
+    </main>
+    <script src="script.js">
+        
+    </script>
+    <footer>
+        <div class="copyright">
+            <img src="assets/icon.webp">
+            <h2>© Solomatin Konstantin IKBO-13-20. All rights reserved</h2>
+        </div>
+    </footer>
+</body>

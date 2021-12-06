@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>Современные операционные системы</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="images/favicon/favicon.ico">
+</head>
+<body>
+    <nav>
+        <a class="icon" href="index.html"><img src="assets/icon.webp" alt="main"></a>
+        <div class="menu">
+            <ul class="nav-bar">
+                <li class="menu-link">
+                    <!-- ГЛАВНАЯ -->
+                    <a class="menu-point" href="index.html">Главная</a>
+                </li>
+                <li class="menu-link">
+                    <!-- WINDOWS -->
+                    <a class="menu-point" href="windows.html">Windows</a>
+                    <ul class = "sub-menu">
+                        <li>
+                            <a class="nav-point" href = "windows.html#main">Windows</a>
+                        </li>
+                        <li class = "sub-menu-link">
+                            <a class="nav-point" href = "windows.html#W9X">Семейство Windows 9x</a>
+                        </li>
+                        <li class = "sub-menu-link">
+                            <a class="nav-point" href = "windows.html#WNT">Семейство Windows NT</a>
+                        </li>
+                        <li class = "sub-menu-link">
+                            <a class="nav-point" href = "windows.html#WP">Семейство ОС Windows для смартфонов</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-link">
+                    <!-- BSD -->
+                    <a class="menu-point" href="bsd.html">BSD</a>
+                    <ul class = "sub-menu">
+                        <li>
+                            <a class="nav-point" href = "bsd.html#BSD">Berkeley Software Distribution</a>
+                        </li>
+                        <li class = "sub-menu-link">
+                            <a class="nav-point" href = "bsd.html#FreeBSD">FreeBSD</a>
+                        </li>
+                        <li class = "sub-menu-link">
+                            <a class="nav-point" href = "bsd.html#OpenBSD">OpenBSD</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-link">
+                    <!-- LINUX -->
+                    <a class="menu-point" href="linux.html">GNU/Linux</a>
+                    <ul class = "sub-menu">
+                        <li>
+                            <a class="nav-point" href = "linux.html#main">Linux</a>
+                        </li>
+                        <li class = "sub-menu-link">
+                            <a class="nav-point" href = "linux.html#history">Ранняя история</a>
+                        </li>
+                        <li class = "sub-menu-link">
+                            <a class="nav-point" href = "linux.html#realization">Реализация</a>
+                        </li>    
+                            <a class="nav-point" href = "linux.html#interface">Интерфейс пользователя</a>
+                        </li>
+                        <li class = "sub-menu-link">
+                            <a class="nav-point" href = "linux.html#model">Модель</a>
+                        </li>
+                        <li class = "sub-menu-link">
+                            <a class="nav-point" href = "linux.html#prog">Программирование в Linux</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-link">
+                    <!-- macOS -->
+                    <a class="menu-point" href="macos.html">macOS</a>
+                    <ul class = "sub-menu">
+                        <li>
+                            <a class="nav-point" href = "macos.html#main">macOS</a>
+                        </li>
+                        <li class = "sub-menu-link">
+                            <a class="nav-point" href = "macos.html#about">Описание</a>
+                        </li>
+                        <li class = "sub-menu-link">
+                            <a class="nav-point" href = "macos.html#software">Программная совместимость</a>
+                        </li>
+                        <li class = "sub-menu-link">
+                            <a class="nav-point" href = "macos.html#hardware">Аппаратная совместимость</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <button class="burger" id="burger" onclick="ToggleMenu()">
+            <div class="line"></div>
+        </button>
+        <div class="menu-burger">
+            <ul class="nav-burger" id="menu-burger" style="list-style-type: none;">
+                <li>
+                    <!-- ГЛАВНАЯ -->
+                    <a class="nav-bar-a" href="index.html">Главная</a>
+                </li>
+                <li>
+                    <!-- WINDOWS -->
+                    <a class="nav-bar-a" href="windows.html">Windows</a>
+                    <ul style="list-style-type: none;">
+                        <li>
+                            <a class="nav-bar-a" href = "windows.html#main">Windows</a>
+                        </li>
+                        <li>
+                            <a class="nav-bar-a" href = "windows.html#W9X">Семейство Windows 9x</a>
+                        </li>
+                        <li>
+                            <a class="nav-bar-a" href = "windows.html#WNT">Семейство Windows NT</a>
+                        </li>
+                        <li>
+                            <a class="nav-bar-a" href = "windows.html#WP">Семейство ОС Windows для смартфонов</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <!-- BSD -->
+                    <a class="nav-bar-a" href="bsd.html" >BSD</a>
+                    <ul style="list-style-type: none;">
+                        <li>
+                            <a class="nav-bar-a" href = "bsd.html#BSD" >Berkeley Software Distribution</a>
+                        </li>
+                        <li>
+                            <a class="nav-bar-a" href = "bsd.html#FreeBSD" >FreeBSD</a>
+                        </li>
+                        <li>
+                            <a class="nav-bar-a" href = "bsd.html#OpenBSD" >OpenBSD</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <!-- LINUX -->
+                    <a class="nav-bar-a" href="linux.html" >GNU/Linux</a>
+                    <ul style="list-style-type: none;">
+                        <li>
+                            <a class="nav-bar-a" href = "linux.html#main" >Linux</a>
+                        </li>
+                        <li>
+                            <a class="nav-bar-a" href = "linux.html#history" >Ранняя история</a>
+                        </li>
+                        <li>
+                            <a class="nav-bar-a" href = "linux.html#realization" >Реализация</a>
+                        </li>    
+                            <a class="nav-bar-a" href = "linux.html#interface" >Интерфейс пользователя</a>
+                        </li>
+                        <li>
+                            <a class="nav-bar-a" href = "linux.html#model" >Модель</a>
+                        </li>
+                        <li>
+                            <a class="nav-bar-a" href = "linux.html#prog" >Программирование в Linux</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <!-- macOS -->
+                    <a class="nav-bar-a" href="macos.html" >macOS</a>
+                    <ul style="list-style-type: none;">
+                        <li>
+                            <a class="nav-bar-a" href = "macos.html#main" >macOS</a>
+                        </li>
+                        <li>
+                            <a class="nav-bar-a" href = "macos.html#about" >Описание</a>
+                        </li>
+                        <li>
+                            <a class="nav-bar-a" href = "macos.html#software" >Программная совместимость</a>
+                        </li>
+                        <li>
+                            <a class="nav-bar-a" href = "macos.html#hardware" >Аппаратная совместимость</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+            <script src="script.js">
+        
+            </script>
+            <!-- ГЛАВНАЯ -->
+            <div class="OS">
+                <img src="assets/winlogo.png">
+                <img src="assets/Tux.svg">
+                <img src="assets/BSD.svg">
+                <img src="assets/macOSlogo.png">
+            </div>
+            <section class="site-main-section">
+                <h1>ГЛАВНАЯ</h1>
+                <div class="site-main-block">
+                    <p>
+                        Современный компьютер состоит из одного или нескольких процессоров, оперативной
+                        памяти, дисков, принтера, клавиатуры, мыши, дисплея, сетевых интерфейсов и других
+                        разнообразных устройств ввода-вывода. В итоге получается довольно сложная система.
+                        Если каждому программисту, создающему прикладную программу, нужно будет разби-
+                        раться во всех тонкостях работы всех этих устройств, то он не напишет ни строчки кода.
+                        Более того, управление всеми этими компонентами и их оптимальное использование
+                        представляет собой очень непростую задачу. По этой причине компьютеры оснащены
+                        специальным уровнем программного обеспечения, который называется операционной
+                        системой, в чью задачу входит управление пользовательскими программами, а также
+                        всеми ранее упомянутыми ресурсами.  
+                    </p>
+                </div>
+            </section>
+    </main>
+    <footer>
+        <div class="copyright">
+            <img src="assets/icon.webp">
+            <h2>© Solomatin Konstantin IKBO-13-20. All rights reserved</h2>
+        </div>
+    </footer>
+</body>

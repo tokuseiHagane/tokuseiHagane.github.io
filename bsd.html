@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <title>Современные операционные системы</title>
+    <link href="styles.css" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="images/favicon/favicon.ico">
+</head>
+<body>
+    <nav>
+        <a class="icon" href="index.html"><img src="assets/icon.webp" alt="main"></a>
+        <div class="menu">
+            <ul class="nav-bar">
+                <li class="menu-link">
+                    <!-- ГЛАВНАЯ -->
+                    <a class="menu-point" href="index.html">Главная</a>
+                </li>
+                <li class="menu-link">
+                    <!-- WINDOWS -->
+                    <a class="menu-point" href="windows.html">Windows</a>
+                    <ul class = "sub-menu">
+                        <li>
+                            <a class="nav-point" href = "windows.html#main" >Windows</a>
+                        </li>
+                        <li class = "sub-menu-link">
+                            <a class="nav-point" href = "windows.html#W9X" >Семейство Windows 9x</a>
+                        </li>
+                        <li class = "sub-menu-link">
+                            <a class="nav-point" href = "windows.html#WNT" >Семейство Windows NT</a>
+                        </li>
+                        <li class = "sub-menu-link">
+                            <a class="nav-point" href = "windows.html#WP" >Семейство ОС Windows для смартфонов</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-link">
+                    <!-- BSD -->
+                    <a class="menu-point" href="bsd.html">BSD</a>
+                    <ul class = "sub-menu">
+                        <li>
+                            <a class="nav-point" href = "#BSD" >Berkeley Software Distribution</a>
+                        </li>
+                        <li class = "sub-menu-link">
+                            <a class="nav-point" href = "#FreeBSD" >FreeBSD</a>
+                        </li>
+                        <li class = "sub-menu-link">
+                            <a class="nav-point" href = "#OpenBSD" >OpenBSD</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-link">
+                    <!-- LINUX -->
+                    <a class="menu-point" href="linux.html">GNU/Linux</a>
+                    <ul class = "sub-menu">
+                        <li>
+                            <a class="nav-point" href = "linux.html#main" >Linux</a>
+                        </li>
+                        <li class = "sub-menu-link">
+                            <a class="nav-point" href = "linux.html#history" >Ранняя история</a>
+                        </li>
+                        <li class = "sub-menu-link">
+                        <li class = "sub-menu-link">
+                            <a class="nav-point" href = "linux.html#realization" >Реализация</a>
+                        </li>    
+                            <a class="nav-point" href = "linux.html#interface" >Интерфейс пользователя</a>
+                        </li>
+                        <li class = "sub-menu-link">
+                            <a class="nav-point" href = "linux.html#model" >Модель</a>
+                        </li>
+                        <li class = "sub-menu-link">
+                            <a class="nav-point" href = "linux.html#prog" >Программирование в Linux</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="menu-link">
+                    <!-- macOS -->
+                    <a class="menu-point" href="macos.html">macOS</a>
+                    <ul class = "sub-menu">
+                        <li>
+                            <a class="nav-point" href = "macos.html#main" >macOS</a>
+                        </li>
+                        <li class = "sub-menu-link">
+                            <a class="nav-point" href = "macos.html#about" >Описание</a>
+                        </li>
+                        <li class = "sub-menu-link">
+                            <a class="nav-point" href = "macos.html#software" >Программная совместимость</a>
+                        </li>
+                        <li class = "sub-menu-link">
+                            <a class="nav-point" href = "macos.html#hardware" >Аппаратная совместимость</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <button class="burger" id="burger" onclick="ToggleMenu()">
+            <div class="line"></div>
+        </button>
+        <div class="menu-burger">
+            <ul class="nav-burger" id="menu-burger" style="list-style-type: none;">
+                <li>
+                    <!-- ГЛАВНАЯ -->
+                    <a class="nav-bar-a" href="index.html">Главная</a>
+                </li>
+                <li>
+                    <!-- WINDOWS -->
+                    <a class="nav-bar-a" href="windows.html">Windows</a>
+                    <ul style="list-style-type: none;">
+                        <li>
+                            <a class="nav-bar-a" href = "windows.html#main" >Windows</a>
+                        </li>
+                        <li>
+                            <a class="nav-bar-a" href = "windows.html#W9X" >Семейство Windows 9x</a>
+                        </li>
+                        <li>
+                            <a class="nav-bar-a" href = "windows.html#WNT" >Семейство Windows NT</a>
+                        </li>
+                        <li>
+                            <a class="nav-bar-a" href = "windows.html#WP" >Семейство ОС Windows для смартфонов</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <!-- BSD -->
+                    <a class="nav-bar-a" href="bsd.html">BSD</a>
+                    <ul style="list-style-type: none;">
+                        <li>
+                            <a class="nav-bar-a" href = "#BSD" >Berkeley Software Distribution</a>
+                        </li>
+                        <li>
+                            <a class="nav-bar-a" href = "#FreeBSD" >FreeBSD</a>
+                        </li>
+                        <li>
+                            <a class="nav-bar-a" href = "#OpenBSD" >OpenBSD</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <!-- LINUX -->
+                    <a class="nav-bar-a" href="linux.html">GNU/Linux</a>
+                    <ul style="list-style-type: none;">
+                        <li>
+                            <a class="nav-bar-a" href = "linux.html#main" >Linux</a>
+                        </li>
+                        <li>
+                            <a class="nav-bar-a" href = "linux.html#history" >Ранняя история</a>
+                        </li>
+                        <li>
+                            <a class="nav-bar-a" href = "linux.html#realization" >Реализация</a>
+                        </li>    
+                            <a class="nav-bar-a" href = "linux.html#interface" >Интерфейс пользователя</a>
+                        </li>
+                        <li>
+                            <a class="nav-bar-a" href = "linux.html#model" >Модель</a>
+                        </li>
+                        <li>
+                            <a class="nav-bar-a" href = "linux.html#prog" >Программирование в Linux</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <!-- macOS -->
+                    <a class="nav-bar-a" href="macos.html">macOS</a>
+                    <ul style="list-style-type: none;">
+                        <li>
+                            <a class="nav-bar-a" href = "macos.html#main" >macOS</a>
+                        </li>
+                        <li>
+                            <a class="nav-bar-a" href = "macos.html#about" >Описание</a>
+                        </li>
+                        <li>
+                            <a class="nav-bar-a" href = "macos.html#software" >Программная совместимость</a>
+                        </li>
+                        <li>
+                            <a class="nav-bar-a" href = "macos.html#hardware" >Аппаратная совместимость</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+            <!-- BSD -->
+            <section class="bsd-section">
+                <img src="assets/BSD.svg">
+                <h1 id="BSD">Berkeley Software Distribution</h1>
+                <div class="bsd-block">
+                    <article>
+                        <p>
+                            BSD (англ. Berkeley Software Distribution) — система распространения программного обеспечения в исходных кодах, созданная для обмена опытом между учебными заведениями. 
+                            Особенностью пакетов ПО BSD была специальная лицензия BSD, которую кратко можно охарактеризовать так: весь исходный код — собственность BSD, все правки — собственность их авторов.
+                            <br>
+                            В данный момент термин BSD чаще всего употребляется как синоним BSD-UNIX — общего названия вариантов UNIX, восходящих к дистрибутивам университета Беркли.
+                        </p>
+                    </article>
+                    <article>
+                        <p>
+                            К семейству BSD относятся: NetBSD, FreeBSD, OpenBSD, ClosedBSD, MirBSD, DragonFly BSD, PC-BSD, GhostBSD, DesktopBSD, SunOS, TrueBSD, Frenzy, Ultrix и частично XNU (ядро macOS, IOS, tvOS, watchOS, CarPlay, Darwin).
+                        </p>
+                    </article>
+                    <article>
+                        <p>
+                            Отличия от «классической» системы UNIX заключены в системе печати, файловой системе, отсутствии переключения уровней выполнения и командной оболочке. Пользовательские команды практически идентичны.
+                        </p>
+                    </article>
+                </div>
+                <div class="bsd-block">
+                    <article>
+                        <p>
+                            В начале 1978 года аспирант Университета Калифорнии в Беркли Билл Джой начал создание дистрибутива программ Беркли. 
+                            Первая магнитная лента (360 м, ценой около 50 долл.) содержала систему Pascal для UNIX и редактор ex; распространено около 30 копий. 
+                            До конца 1978 года распространялся пакет 2BSD, продано около 75 копий. 
+                            Приблизительно тогда же компания Interactive Systems выпускает первую коммерческую версию UNIX, а компания Whitesmiths — первый клон системы UNIX — Idris.
+                        </p>
+                    </article>
+                    <article>
+                        <p>
+                            Начиная с версии 2.79BSD, программные дистрибутивы университета Беркли перестали содержать код AT&T UNIX. 
+                            Версия UNIX 7 была первой переносимой операционной системой. Однако её производительность была хуже, чем в версии шесть. 
+                            После многих доработок в январе 1982 года вышла в свет модель 2.8.1BSD.
+                            <br>
+                        <ul>
+                            <li>4BSD — октябрь 1980 года</li>
+                            <li>4.1BSD — июнь 1981 года</li>
+                            <li>4.1a, 4.1b и 4.1c (1982—1983)</li>
+                            <li>4.2 — сентябрь 1983 года — сильно переработанная система, включавшая поддержку сетей TCP/IP, новую файловую систему и возможность использования сигналов</li>    
+                            <li>4.3BSD</li>
+                        </ul>
+                        </p>
+                    </article>
+                    <article>
+                        <p>
+                            Последней университетской версией была 4.4BSD (июнь 1993 года). 
+                            Из нововведений эта версия включала виртуальную файловую систему, поддержку сетевой файловой системы NFS, отладчик ядра и мощную реализацию стека протоколов TCP/IP.
+                        </p>
+                    </article>
+                    <article>
+                        <p>
+                            После суда права на BSD были переданы компании BSDI.
+                            <br>
+                            На базе BSD-UNIX создано множество операционных систем, преимущественно также с открытыми исходными текстами.
+                        </p>
+                    </article>
+                </div>
+                <div class="bsd-block">
+                    <h2 id="FreeBSD">FreeBSD</h2>
+                    <article>
+                        <p>
+                            FreeBSD — свободная операционная система семейства UNIX, потомок AT&T Unix по линии BSD, созданной в университете Беркли.
+                            <br>
+                            FreeBSD разрабатывается как целостная операционная система. 
+                            Исходный код ядра, драйвера устройств и базовых пользовательских программ, таких как командные оболочки и т. п., содержатся в одном дереве системы контроля версиями (до 31 мая 2008 — CVS, позже — SVN, а сейчас — Git14). 
+                            Это отличает FreeBSD от GNU/Linux — другой свободной UNIX-подобной операционной системы, в которой ядро разрабатывается одной группой разработчиков, набор пользовательских программ — другими (например, проект GNU). 
+                            А многочисленные группы собирают это всё в единое целое и выпускают в виде различных дистрибутивов Linux.
+                        </p>
+                        <div class="aside-img">
+                            <img src="assets/FreeBSDlogo.png">
+                        </div>
+                    </article>
+                    <article>
+                        <p>
+                            FreeBSD хорошо зарекомендовала себя как система для построения интранет- и интернет-сетей и серверов. 
+                            Она предоставляет надёжные сетевые службы и эффективное управление памятью.
+                        </p>
+                    </article>
+                    <article>
+                        <p>
+                            Помимо своей стабильности, FreeBSD популярна и благодаря своей лицензии, которая существенно отличается от широко известной лицензии GNU GPL. 
+                            Лицензия BSD позволяет использовать код не только в свободном ПО, но и в проприетарном. 
+                            В отличие от GNU LGPL, которая требует раскрытия исходных кодов, лицензия BSD является более простой и непритязательной, требуя лишь упоминания заимствования, авторства и отказ от навязывания ответственности (нельзя отсылать пользователей своего продукта к авторам заимствованного кода).
+                        </p>
+                    </article>
+                </div>
+                <div class="bsd-block">
+                    <article>
+                        <p>
+                            Разработка FreeBSD началась в 1993 году с быстрорастущего набора патчей пользователей системы 386BSD. 
+                            Этот набор позже вырос и отделился от 386BSD в отдельную операционную систему, включив в себя код от Free Software Foundation. 
+                            Первая официальная версия FreeBSD 1.0 вышла в декабре 1993 года. 
+                            Walnut Creek CDROM согласилась распространять FreeBSD на компакт-диске и также предоставила для работы проекту отдельный компьютер с интернет-соединением. 
+                            Затем, в мае 1994 года, последовал успешный выпуск FreeBSD 1.1.
+                        </p>
+                    </article>
+                    <article>
+                        <p>
+                            Однако, из соображений законности использования исходных кодов BSD Net/2 в 386BSD, команда разработчиков FreeBSD переработала большую часть системы ко времени выпуска FreeBSD 2.0 в январе 1995 года, используя 4.4BSD-Lite. 
+                            Руководство к FreeBSD содержит более подробную историческую информацию о происхождении системы26.
+                        </p>
+                    </article>
+                </div>
+                
+                <div class="bsd-block">
+                    <h2 id="OpenBSD">OpenBSD</h2>
+                    <article>
+                        <p>
+                            OpenBSD — свободная многоплатформенная операционная система, основанная на 4.4BSD — BSD-реализации UNIX-системы. 
+                            Основным отличием OpenBSD от других свободных операционных систем, базирующихся на 4.4BSD (таких, как NetBSD, FreeBSD), является изначальная ориентированность проекта на создание наиболее безопасной, свободной и лицензионно чистой из существующих операционных систем.
+                        </p>
+                        <div class="aside-img">
+                            <img src="assets/OpenBSDlogo.svg">
+                        </div>
+                    </article>
+                </div>
+                <div class="bsd-block">
+                    <article>
+                        <p>
+                            OpenBSD — самостоятельный проект, ответвление NetBSD, возникшее в конце 1995 года в результате раскола в команде разработчиков. 
+                            Тео де Раадт (Theo de Raadt), один из четырёх основателей NetBSD, был вынужден покинуть проект после конфронтации по поводу дальнейшего развития операционной системы. 
+                            Взяв за основу дерево исходных кодов NetBSD и переделав его в соответствии со своим видением, он создал свой собственный проект — OpenBSD, в который, вслед за ним, перешли и некоторые другие разработчики NetBSD.
+                        </p>
+                    </article>
+                </div>
+                <div class="bsd-block">
+                    <article>
+                        Новые версии (релизы) OpenBSD выходят каждые полгода: ориентировочно 1 мая и 1 ноября. 
+                        В настоящий момент поддерживаются 15 различных платформ и архитектур, включая популярные i386-совместимые компьютеры, M68k, UltraSPARC, DEC Alpha, AMD64, Sharp Zaurus и другие. 
+                        Для установки доступно свыше 9500 пакетов с программным обеспечением, собираемым посредством штатного механизма портов.
+                    </article>
+                    <article>
+                        Между релизами происходит регулярный выход снапшотов, формируемых тем же путём, что и релизы. 
+                        Снапшоты в основном соответствуют текущему состоянию дерева исходных текстов, но иногда в них вносятся дополнительные изменения, требующие тестирования.
+                    </article>
+                    <article>
+                        <p>
+                            До версии 6.2 каждый релиз сопровождался комиксом и как минимум одной песней. 
+                            В песнях рассказывалось о процессе создания релизов, о спорах и конфликтах, возникших за прошедшие 6 месяцев, но чаще всего темой песен становятся новинки соответствующего релиза. 
+                            До 2016 года релизы выпускались на CD-ROM. Начиная с версии 6.1 релизы выпускаются только в Интернете, при этом на CD-ROM выпускается ровно один экземпляр, выставляемый на аукцион.
+                        </p>
+                    </article>
+                    <article>
+                        <p>
+                            Установка OpenBSD штатно возможна многими способами, в том числе: с компакт-диска, с USB-флешки, с дискеты, а также по сети посредством PXE. 
+                            Из-за ограничений отдельных аппаратных платформ некоторые способы установки могут быть недоступны.
+                        </p>
+                    </article>
+                    <article>
+                        <p>
+                            Релизы, включая снапшоты, подписываются утилитой signify собственной разработки. 
+                            Отдельными ключами подписываются: 1) базовая система; 2) сторонние пакеты с прошивками оборудования; 3) все остальные сторонние пакеты. 
+                            Каждый новый релиз подписывается новым ключом, при этом публичный ключ для очередного релиза поставляется уже вместе с предшествующим релизом.
+                        </p>
+                    </article>
+                    <article>
+                        <p>
+                            OpenBSD — одна из немногих популярных современных операционных систем общего назначения, не обладающей штатным графическим и/или локализованным инсталлятором. 
+                            Штатный инсталлятор представляет собой большой шелл-скрипт, с возможностью автоматической установки.
+                        </p>
+                        <div class="aside-img">
+                            <img src="assets/OpenBSD_hackers.jpg">
+                            <span>Разработчики OpenBSD на хакатоне c2k1 в MIT</span>
+                        </div>
+                    </article>
+                </div>
+            </section>
+    </main>
+    <script src="script.js">
+        
+    </script>
+    <footer>
+        <div class="copyright">
+            <img src="assets/icon.webp">
+            <h2>© Solomatin Konstantin IKBO-13-20. All rights reserved</h2>
+        </div>
+    </footer>
+</body>
