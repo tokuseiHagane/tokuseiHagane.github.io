@@ -401,6 +401,7 @@ footer {
 }
 .nav-bar-a {
     cursor:grab;
+    padding: 2%;
 }
 @media screen and (max-width: 1100px) {
     .menu {
