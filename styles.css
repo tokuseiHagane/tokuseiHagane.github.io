@@ -23,7 +23,7 @@ a:any-link {
 }
 
 nav {
-    transform: scaleY();
+    transform: scale();
     background-color: #3E2D84;
     top: 0;
     position: fixed;
@@ -35,7 +35,7 @@ nav {
     align-items: center;
 }
 .menu {
-    transform: scaleY();
+    transform: scale();
     transition: 0.5s;
     padding: 0;
     padding-bottom: 28px;
@@ -44,7 +44,7 @@ nav {
     width: 38%;
 }
 .nav-bar {
-    transform: scaleY();
+    transform: scale();
     font-weight: bold;
     transition: 0.5s;
     padding: 0;
@@ -54,13 +54,13 @@ nav {
     list-style-type: none;
 }
 .menu-link > li {
-    transform: scaleY();
+    transform: scale();
     font-weight: bold;
     transition: 0.5s;
     position: inherit;
 }
 .menu-link .menu-point{
-    transform: scaleY();
+    transform: scale();
     transition: 0.5s;
     margin-left: 10px;
     margin-right: 10px;
@@ -73,7 +73,7 @@ nav {
 }
 
 .nav-bar > li:hover .sub-menu {
-    transform: scaleY();
+    transform: scale();
     font-weight: bold;
     margin-top: 5px; 
     margin-left: 10px;
@@ -94,7 +94,7 @@ nav {
 }
 
 .sub-menu {
-    transform: scaleY();
+    transform: scale();
     transition: 0.5s;
     list-style-type: none;
     display: none;
