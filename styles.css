@@ -23,6 +23,8 @@ a:any-link {
 }
 
 nav {
+    transform: scale();
+    transition: 0.5s;
     background-color: #3E2D84;
     top: 0;
     position: fixed;
@@ -34,7 +36,8 @@ nav {
     align-items: center;
 }
 .menu {
-    transition: 2s;
+    
+    transition: 0.5s;
     padding: 0;
     padding-bottom: 28px;
     margin: 0;
@@ -42,8 +45,9 @@ nav {
     width: 38%;
 }
 .nav-bar {
+    
     font-weight: bold;
-    transition: 2s;
+    transition: 0.5s;
     padding: 0;
     margin: 0;
     position: absolute;
@@ -52,11 +56,11 @@ nav {
 }
 .menu-link > li {
     font-weight: bold;
-    transition: 2s;
+    transition: 0.5s;
     position: inherit;
 }
 .menu-link .menu-point{
-    transition: 2s;
+    transition: 0.5s;
     margin-left: 10px;
     margin-right: 10px;
     padding: 4px;
@@ -79,7 +83,7 @@ nav {
     background-color: #62247F;
     border-radius: 2px;
     color: white;
-    transition: 2s;
+    transition: 0.5s;
 }
 
 .nav-point {
@@ -88,7 +92,7 @@ nav {
 }
 
 .sub-menu {
-    transition: 2s;
+    transition: 0.5s;
     list-style-type: none;
     display: none;
 }
