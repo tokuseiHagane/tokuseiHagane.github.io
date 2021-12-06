@@ -422,7 +422,6 @@ footer {
         flex-direction: column;
     } 
     .menu-burger {
-        /* transition: 0.1s; */
         display: flex;
         width: 100%;
         color: white;
