@@ -425,6 +425,7 @@ footer {
         flex-direction: column;
     } 
     .menu-burger {
+        transition: 2s;
         display: flex;
         width: 100%;
         color: white;
@@ -433,6 +434,7 @@ footer {
         background: #3E2D84;
     }
     .nav-burger {
+        transition: 2s;
         flex-direction: column;
         position: absolute;
         background: #3E2D84;
@@ -442,17 +444,21 @@ footer {
         opacity: 0;
     }
     .nav-bar-a {
+        transition: 2s;
         font-size: x-large;
         pointer-events:none;
     }
     .nav-burger.active{
+        transition: 2s;
         opacity: 1;
     }
     .nav-bar-a.active{
+        transition: 2s;
         pointer-events:visible;
         cursor: pointer;
     }
     .burger {
+        transition: 2s;
         opacity: 1;
         margin: 0;
         padding: 0;
@@ -468,36 +474,44 @@ footer {
         justify-content: center;
     }
     .burger .line, .burger .line::after, .burger .line::before {
+        transition: 2s;
         display: inline-block;
         background-color: rgb(0, 0, 0);
         height: 4px;
         border-radius: 10px;
     }
     .burger .line::after, .burger .line::before {
+        transition: 2s;
         content: '';
         width: 100%;
         position: absolute;
         left: 0;
     }
     .burger .line::before {
+        transition: 2s;
         top: .5rem;
     }
     .burger .line::after {
+        transition: 2s;
         top: -.5rem;
     }
     .burger .line {
+        transition: 2s;
         width: 70%;
         position: relative;
     }
     .burger.active .line{
+        transition: 2s;
         background-color: transparent;
     }
     .burger.active .line::before {
+        transition: 2s;
         top: 0;
         background-color: red;
         transform: rotate(135deg);
     }
     .burger.active .line::after {
+        transition: 2s;
         top: 0;
         background-color: red;
         transform: rotate(-135deg);
