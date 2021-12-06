@@ -396,7 +396,6 @@ footer {
 }
 .menu-burger {
     pointer-events: none;
-    z-index: -2;
     transition: 0.1s;
     visibility: hidden;
 }
@@ -444,18 +443,12 @@ footer {
     .nav-bar-a {
         transition: 0.1s;
         font-size: x-large;
-        /* pointer-events:none; */
     }
     .nav-burger.active{
         pointer-events: auto;
         transition: 0.1s;
         visibility: visible;
     }
-    /* .nav-bar-a.active{
-        transition: 0.1s;
-        pointer-events:visible;
-        cursor: pointer;
-    } */
     .burger {
         transition: 0.1s;
         opacity: 1;
@@ -522,8 +515,6 @@ footer {
 @media screen and (max-width: 800px) {
     .nav-bar-a {
         font-size: small;
-        /* pointer-events:none;
-        cursor: default; */
     }
     .site-main-block {
         font-size: x-large;
@@ -627,7 +618,5 @@ footer {
     }
     .nav-bar-a {
         font-size: x-small;
-        /* pointer-events:none;
-        cursor: default; */
     }
 }
