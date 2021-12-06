@@ -395,13 +395,11 @@ footer {
     visibility: hidden;
 }
 .menu-burger {
-    pointer-events: none;
-    z-index: -2;
+    visibility: hidden;
     transition: 0.1s;
     display: none;
 }
 .nav-bar-a {
-    pointer-events: none;
     cursor: default;
 }
 @media screen and (max-width: 1100px) {
@@ -424,6 +422,8 @@ footer {
         flex-direction: column;
     } 
     .menu-burger {
+        visibility: hidden;
+        transition: 0.1s;
         display: flex;
         width: 100%;
         color: white;
@@ -432,6 +432,7 @@ footer {
         background: #3E2D84;
     }
     .nav-burger {
+        visibility: hidden;
         transition: 0.1s;
         flex-direction: column;
         position: absolute;
@@ -439,27 +440,19 @@ footer {
         color: white;
         top: 40px;
         width: 100%;
-        opacity: 0;
+        opacity: 1;
     }
     .nav-bar-a {
         transition: 0.1s;
         font-size: x-large;
-        pointer-events:none;
     }
     .nav-burger.active{
-        pointer-events: auto;
+        visibility: visible;
         transition: 0.1s;
-        opacity: 1;
-    }
-    .nav-bar-a.active{
-        transition: 0.1s;
-        pointer-events:visible;
-        cursor: pointer;
     }
     .burger {
         visibility: visible;
         transition: 0.1s;
-        opacity: 1;
         margin: 0;
         padding: 0;
         background: #3E2D84;
@@ -523,8 +516,6 @@ footer {
 @media screen and (max-width: 800px) {
     .nav-bar-a {
         font-size: small;
-        pointer-events:none;
-        cursor: default;
     }
     .site-main-block {
         font-size: x-large;
@@ -628,7 +619,5 @@ footer {
     }
     .nav-bar-a {
         font-size: x-small;
-        pointer-events:none;
-        cursor: default;
     }
 }
