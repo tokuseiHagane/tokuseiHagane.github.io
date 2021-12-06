@@ -53,12 +53,13 @@ nav {
     list-style-type: none;
 }
 .menu-link > li {
-    transform: scale();
+    transform: scaleY();
     font-weight: bold;
     transition: 0.5s;
     position: inherit;
 }
 .menu-link .menu-point{
+    transform: scaleY();
     transition: 0.5s;
     margin-left: 10px;
     margin-right: 10px;
