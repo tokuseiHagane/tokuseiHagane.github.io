@@ -34,7 +34,7 @@ nav {
     align-items: center;
 }
 .menu {
-    transform: scale();
+    
     transition: 0.5s;
     padding: 0;
     padding-bottom: 28px;
@@ -43,7 +43,7 @@ nav {
     width: 38%;
 }
 .nav-bar {
-    
+    transform: scale();
     font-weight: bold;
     transition: 0.5s;
     padding: 0;
