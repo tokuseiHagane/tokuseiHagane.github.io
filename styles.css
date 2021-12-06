@@ -43,7 +43,7 @@ nav {
     width: 38%;
 }
 .nav-bar {
-    transform: scale();
+    
     font-weight: bold;
     transition: 0.5s;
     padding: 0;
@@ -53,6 +53,7 @@ nav {
     list-style-type: none;
 }
 .menu-link > li {
+    transform: scale();
     font-weight: bold;
     transition: 0.5s;
     position: inherit;
