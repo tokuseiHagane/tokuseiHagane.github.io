@@ -392,12 +392,13 @@ footer {
     transform: scale();
     transition: 0.1s;
     position: absolute;
-    /* visibility: hidden; */
+    visibility: hidden;
 }
 .menu-burger {
     pointer-events: none;
+    z-index: -2;
     transition: 0.1s;
-    /* visibility: hidden; */
+    visibility: hidden;
 }
 .nav-bar-a {
     pointer-events: none;
@@ -438,17 +439,23 @@ footer {
         color: white;
         top: 40px;
         width: 100%;
-        /* visibility: hidden; */
+        visibility: hidden;
     }
     .nav-bar-a {
         transition: 0.1s;
         font-size: x-large;
+        /* pointer-events:none; */
     }
     .nav-burger.active{
         pointer-events: auto;
         transition: 0.1s;
         visibility: visible;
     }
+    /* .nav-bar-a.active{
+        transition: 0.1s;
+        pointer-events:visible;
+        cursor: pointer;
+    } */
     .burger {
         transition: 0.1s;
         opacity: 1;
