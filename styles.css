@@ -423,7 +423,6 @@ footer {
         flex-direction: column;
     } 
     .menu-burger {
-        padding: 1%;
         visibility: hidden;
         transition: 0.1s;
         display: flex;
@@ -434,6 +433,7 @@ footer {
         background: #3E2D84;
     }
     .nav-burger {
+        padding: 1%;
         visibility: hidden;
         transition: 0.1s;
         flex-direction: column;
