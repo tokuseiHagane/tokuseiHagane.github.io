@@ -432,7 +432,7 @@ footer {
         background: #3E2D84;
     }
     .nav-burger {
-        z-index: -2;
+        z-index: -10;
         transition: 0.1s;
         flex-direction: column;
         position: absolute;
