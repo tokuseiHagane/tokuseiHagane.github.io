@@ -72,7 +72,7 @@ nav {
 }
 
 .nav-bar > li:hover .sub-menu {
-    transform: scaleY();
+    
     font-weight: bold;
     margin-top: 5px; 
     margin-left: 10px;
@@ -93,6 +93,7 @@ nav {
 }
 
 .sub-menu {
+    transform: scaleY();
     transition: 0.5s;
     list-style-type: none;
     display: none;
