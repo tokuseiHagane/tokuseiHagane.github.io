@@ -23,7 +23,6 @@ a:any-link {
 }
 
 nav {
-    transform: scale();
     background-color: #3E2D84;
     top: 0;
     position: fixed;
@@ -35,8 +34,6 @@ nav {
     align-items: center;
 }
 .menu {
-    transform: scale();
-    transition: 0.5s;
     padding: 0;
     padding-bottom: 28px;
     margin: 0;
@@ -44,9 +41,7 @@ nav {
     width: 38%;
 }
 .nav-bar {
-    transform: scale();
     font-weight: bold;
-    transition: 0.5s;
     padding: 0;
     margin: 0;
     position: absolute;
@@ -54,14 +49,10 @@ nav {
     list-style-type: none;
 }
 .menu-link > li {
-    transform: scale();
     font-weight: bold;
-    transition: 0.5s;
     position: inherit;
 }
 .menu-link .menu-point{
-    transform: scale();
-    transition: 0.5s;
     margin-left: 10px;
     margin-right: 10px;
     padding: 4px;
@@ -73,7 +64,6 @@ nav {
 }
 
 .nav-bar > li:hover .sub-menu {
-    transform: scale();
     font-weight: bold;
     margin-top: 5px; 
     margin-left: 10px;
@@ -85,7 +75,6 @@ nav {
     background-color: #62247F;
     border-radius: 2px;
     color: white;
-    transition: 0.5s;
 }
 
 .nav-point {
@@ -94,8 +83,6 @@ nav {
 }
 
 .sub-menu {
-    transform: scale();
-    transition: 0.5s;
     list-style-type: none;
     display: none;
 }
@@ -403,12 +390,12 @@ footer {
 
 .burger {
     transform: scale();
-    transition: 0.5s;
+    transition: 0.1s;
     position: absolute;
     opacity: 0;
 }
 .menu-burger {
-    transition: 0.5s;
+    transition: 0.1s;
     display: none;
 }
 .nav-bar-a {
@@ -435,7 +422,7 @@ footer {
         flex-direction: column;
     } 
     .menu-burger {
-        transition: 0.5s;
+        transition: 0.1s;
         display: flex;
         width: 100%;
         color: white;
@@ -444,7 +431,7 @@ footer {
         background: #3E2D84;
     }
     .nav-burger {
-        transition: 0.5s;
+        transition: 0.1s;
         flex-direction: column;
         position: absolute;
         background: #3E2D84;
@@ -454,21 +441,21 @@ footer {
         opacity: 0;
     }
     .nav-bar-a {
-        transition: 0.5s;
+        transition: 0.1s;
         font-size: x-large;
         pointer-events:none;
     }
     .nav-burger.active{
-        transition: 0.5s;
+        transition: 0.1s;
         opacity: 1;
     }
     .nav-bar-a.active{
-        transition: 0.5s;
+        transition: 0.1s;
         pointer-events:visible;
         cursor: pointer;
     }
     .burger {
-        transition: 0.5s;
+        transition: 0.1s;
         opacity: 1;
         margin: 0;
         padding: 0;
@@ -484,44 +471,44 @@ footer {
         justify-content: center;
     }
     .burger .line, .burger .line::after, .burger .line::before {
-        transition: 0.5s;
+        transition: 0.1s;
         display: inline-block;
         background-color: rgb(0, 0, 0);
         height: 4px;
         border-radius: 10px;
     }
     .burger .line::after, .burger .line::before {
-        transition: 0.5s;
+        transition: 0.1s;
         content: '';
         width: 100%;
         position: absolute;
         left: 0;
     }
     .burger .line::before {
-        transition: 0.5s;
+        transition: 0.1s;
         top: .5rem;
     }
     .burger .line::after {
-        transition: 0.5s;
+        transition: 0.1s;
         top: -.5rem;
     }
     .burger .line {
-        transition: 0.5s;
+        transition: 0.1s;
         width: 70%;
         position: relative;
     }
     .burger.active .line{
-        transition: 0.5s;
+        transition: 0.1s;
         background-color: transparent;
     }
     .burger.active .line::before {
-        transition: 0.5s;
+        transition: 0.1s;
         top: 0;
         background-color: red;
         transform: rotate(135deg);
     }
     .burger.active .line::after {
-        transition: 0.5s;
+        transition: 0.1s;
         top: 0;
         background-color: red;
         transform: rotate(-135deg);
