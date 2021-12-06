@@ -397,7 +397,7 @@ footer {
 .menu-burger {
     pointer-events: none;
     transition: 0.1s;
-    visibility: hidden;
+    /* visibility: hidden; */
 }
 .nav-bar-a {
     pointer-events: none;
