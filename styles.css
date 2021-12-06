@@ -400,7 +400,7 @@ footer {
     display: none;
 }
 .nav-bar-a {
-    cursor: default;
+    cursor:auto;
 }
 @media screen and (max-width: 1100px) {
     .menu {
