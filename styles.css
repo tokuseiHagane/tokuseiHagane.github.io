@@ -211,56 +211,41 @@ main {
     padding-left: 5%
 }
 
-/* ##### WINDOWS ##### */
-
-.content-block[name=win-page] > article {
+.content-block > article {
     margin: 1%;
     padding: 2%;
-    background: #0e50a7dc;
-    border: 1px #0e50a7dc;
     border-radius: 2%;
     color: white;
     display: flex;
     flex-direction: row;
+}
+
+/* ##### WINDOWS ##### */
+
+.content-block[name=win-page] > article {
+    background: #0e50a7dc;
+    border: 1px #0e50a7dc;
 }
 
 /* ##### BSD  ##### */
 
 .content-block[name=bsd-page] > article {
-    margin: 1%;
-    padding: 2%;
     background: #006F48dc;
     border: 1px #006F48dc;
-    border-radius: 2%;
-    color: white;
-    display: flex;
-    flex-direction: row;
 }
 
 /* ##### LINUX ##### */
 
 .content-block[name=linux-page] > article {
-    margin: 1%;
-    padding: 2%;
     background: #BF5730dc;
     border: 1px #BF5730dc;
-    border-radius: 2%;
-    color: white;
-    display: flex;
-    flex-direction: row;
 }
 
 /* ##### macOS ##### */
 
 .content-block[name=macOS-page] > article {
-    margin: 1%;
-    padding: 2%;
     background: #015367dc;
     border: 1px #015367dc;
-    border-radius: 2%;
-    color: white;
-    display: flex;
-    flex-direction: row;
 }
 
 /* ##### ПОДВАЛ ##### */
@@ -317,7 +302,7 @@ footer {
     .site-main-block {
         font-size: 50px;
     }
-    .content-block[name] > article {
+    .content-block > article {
         flex-direction: column;
     }
     .menu-burger {
@@ -424,7 +409,7 @@ footer {
         font-size: 50px;
     }
 
-    .content-block[name] > article {
+    .content-block > article {
         font-size: medium;
     }
 
@@ -441,7 +426,7 @@ footer {
         font-size: 23px;
     }
 
-    .content-block[name] > article {
+    .content-block > article {
         font-size: small;
     }
 
