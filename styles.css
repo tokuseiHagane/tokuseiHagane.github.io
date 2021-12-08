@@ -174,9 +174,8 @@ main {
     box-shadow:  10px 5px 5px rgb(24, 24, 24);
     padding: 1%;
 }
-/* ##### WINDOWS ##### */
 
-.win-section {
+.site-section {
     margin-left: 0;
     height: fit-content;
     display: flex;
@@ -186,17 +185,19 @@ main {
     justify-content: space-around;
     text-align: justify;
 }
-.win-section > img {
+
+.site-section > img {
     padding: 2%;
     width: 25%;
 }
-.win-section > h1 {
+
+.site-section > h1 {
     margin: 3%;
     color: rgb(255, 255, 255);
     font-size: 62px;
 }
 
-.win-block {
+.content-block {
     align-self: center;
     display: flex;
     width: 80%;
@@ -204,12 +205,15 @@ main {
     font-size: 20px;
 }
 
-.win-block > h2 {
+.content-block > h2 {
     color: rgb(255, 255, 255);
     font-size: 40px;
     padding-left: 5%
 }
-.win-block > article {
+
+/* ##### WINDOWS ##### */
+
+.content-block[name=win-page] > article {
     margin: 1%;
     padding: 2%;
     background: #0e50a7dc;
@@ -221,40 +225,8 @@ main {
 }
 
 /* ##### BSD  ##### */
-.bsd-section {
-    margin-left: 0;
-    height: fit-content;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-items: space-around;
-    justify-content: space-around;
-    text-align: justify;
-}
-.bsd-section > img {
-    padding: 2%;
-    width: 25%;
-}
-.bsd-section > h1 {
-    margin: 3%;
-    color: rgb(255, 255, 255);
-    font-size: 62px;
-}
 
-.bsd-block {
-    align-self: center;
-    display: flex;
-    width: 80%;
-    flex-direction: column;
-    font-size: 20px;
-}
-
-.bsd-block > h2 {
-    color: rgb(255, 255, 255);
-    font-size: 40px;
-    padding-left: 5%
-}
-.bsd-block > article {
+.content-block[name=bsd-page] > article {
     margin: 1%;
     padding: 2%;
     background: #006F48dc;
@@ -267,40 +239,7 @@ main {
 
 /* ##### LINUX ##### */
 
-.linux-section {
-    margin-left: 0;
-    height: fit-content;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-items: space-around;
-    justify-content: space-around;
-    text-align: justify;
-}
-.linux-section > img {
-    padding: 2%;
-    width: 25%;
-}
-.linux-section > h1 {
-    margin: 3%;
-    color: rgb(255, 255, 255);
-    font-size: 62px;
-}
-
-.linux-block {
-    align-self: center;
-    display: flex;
-    width: 80%;
-    flex-direction: column;
-    font-size: 20px;
-}
-
-.linux-block > h2 {
-    color: rgb(255, 255, 255);
-    font-size: 40px;
-    padding-left: 5%
-}
-.linux-block > article {
+.content-block[name=linux-page] > article {
     margin: 1%;
     padding: 2%;
     background: #BF5730dc;
@@ -313,40 +252,7 @@ main {
 
 /* ##### macOS ##### */
 
-.macOS-section {
-    margin-left: 0;
-    height: fit-content;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    justify-items: space-around;
-    justify-content: space-around;
-    text-align: justify;
-}
-.macOS-section > img {
-    padding: 2%;
-    width: 25%;
-}
-.macOS-section > h1 {
-    margin: 3%;
-    color: rgb(255, 255, 255);
-    font-size: 62px;
-}
-
-.macOS-block {
-    align-self: center;
-    display: flex;
-    width: 80%;
-    flex-direction: column;
-    font-size: 20px;
-}
-
-.macOS-block > h2 {
-    color: rgb(255, 255, 255);
-    font-size: 40px;
-    padding-left: 5%
-}
-.macOS-block > article {
+.content-block[name=macOS-page] > article {
     margin: 1%;
     padding: 2%;
     background: #015367dc;
@@ -410,18 +316,9 @@ footer {
     .site-main-block {
         font-size: 50px;
     }
-    .win-block > article {
+    .content-block[name] > article {
         flex-direction: column;
     }
-    .bsd-block > article {
-        flex-direction: column;
-    }
-    .linux-block > article {
-        flex-direction: column;
-    }
-    .macOS-block > article {
-        flex-direction: column;
-    } 
     .menu-burger {
         visibility: hidden;
         transition: 0.1s;
@@ -524,101 +421,39 @@ footer {
     }
 }
 @media screen and (max-width: 600px) {
-    .win-section > h1 {
+    .site-section > h1 {
         font-size: 50px;
     }
-    .win-block > article {
+
+    .content-block[name] > article {
         font-size: medium;
-        flex-direction: column;
     }
-    .win-block > h2 {
+
+    .content-block > h2 {
         font-size: 25px;
     }
 
-    .bsd-section > h1 {
-        font-size: 50px;
-    }
-    .bsd-block > article {
-        font-size: medium;
-        flex-direction: column;
-    }
-    .bsd-block > h2 {
-        font-size: 25px;
-    }
-
-    .linux-section > h1 {
-        font-size: 40px;
-    }
-    .linux-block > article {
-        font-size: medium;
-        flex-direction: column;
-    }
-    .linux-block > h2 {
-        font-size: 25px;
-    }
-
-    .macOS-section > h1 {
-        font-size: 40px;
-    }
-    .macOS-block > article {
-        font-size: medium;
-        flex-direction: column;
-    }
-    .macOS-block > h2 {
-        font-size: 25px;
-    }
     .nav-bar-a {
         font-size: small;
     }
-    
 }
 @media only screen and (max-width: 480px) {
     .menu {
         display: none;
     }
-    .win-section > h1 {
-        font-size: 40px;
-    }
-    .win-block > article {
-        font-size: small;
-        flex-direction: column;
-    }
-    .win-block > h2 {
-        font-size: 20px;
-    }
 
-    .bsd-section > h1 {
+    .site-section > h1 {
         font-size: 23px;
     }
-    .bsd-block > article {
+
+    .content-block[name] > article {
         font-size: small;
-        flex-direction: column;
     }
-    .bsd-block > h2 {
+
+    .content-block > h2 {
         font-size: 20px;
     }
 
-    .linux-section > h1 {
-        font-size: 40px;
-    }
-    .linux-block > article {
-        font-size: small;
-        flex-direction: column;
-    }
-    .linux-block > h2 {
-        font-size: 20px;
-    }
-
-    .macOS-section > h1 {
-        font-size: 40px;
-    }
-    .macOS-block > article {
-        font-size: small;
-        flex-direction: column;
-    }
-    .macOS-block > h2 {
-        font-size: 20px;
-    }
     .nav-bar-a {
         font-size: x-small;
     }
