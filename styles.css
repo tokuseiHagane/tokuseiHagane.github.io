@@ -399,6 +399,9 @@ footer {
 }
 
 @media screen and (max-width: 800px) {
+    .icons-main {
+        width: 150px;
+    }
     .nav-bar-a {
         font-size: small;
     }
@@ -407,6 +410,9 @@ footer {
     }
 }
 @media screen and (max-width: 600px) {
+    .icons-main {
+        width: 120px;
+    }
     .site-section > h1 {
         font-size: 50px;
     }
