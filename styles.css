@@ -291,7 +291,7 @@ footer {
 }
 .nav-bar-a {
     cursor:grab;
-    padding: 2%;
+    padding: 8%;
 }
 @media screen and (max-width: 1100px) {
     .icons-main {
@@ -403,7 +403,7 @@ footer {
         font-size: small;
     }
     .site-main-block {
-        font-size: x-large;
+        font-size: large;
     }
 }
 @media screen and (max-width: 600px) {
@@ -420,7 +420,7 @@ footer {
     }
 
     .nav-bar-a {
-        font-size: small;
+        font-size:medium;
     }
 }
 @media only screen and (max-width: 480px) {
@@ -437,6 +437,6 @@ footer {
     }
 
     .nav-bar-a {
-        font-size: x-small;
+        font-size: small;
     }
 }
