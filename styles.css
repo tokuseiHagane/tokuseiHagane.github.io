@@ -106,9 +106,9 @@ main {
     justify-content: center;
     width: 100%;
 }
-.OS > img {
-    padding: 2%;
-    width: 14%;
+.icons-main {
+    padding: 5%;
+    width: 300px;
 }
 
 .site-main-section {
@@ -139,7 +139,7 @@ main {
     color: white;
     display: flex;
     flex-direction: row;
-    font-size: x-large;
+    font-size: xx-large;
 }
 
 .aside-img {
@@ -294,6 +294,9 @@ footer {
     padding: 2%;
 }
 @media screen and (max-width: 1100px) {
+    .icons-main {
+        width: 200px;
+    }
     .menu {
         width: 70%;
         display: none;
